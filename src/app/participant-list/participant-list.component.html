@@ -1,0 +1,17 @@
+<table cellspacing="0" >
+    <tr>
+        <td>
+            <p style="text-align: left;font-size: large;width: 200%;">{{participant.nom}} / {{participant.prenom}} / {{participant.adresse}} / {{participant.email}} / {{participant.societe}} / {{participant.poste}}</p>
+        </td>
+        <td>
+            <a [routerLink]="['/editPart', participant.id]" routerLinkActive="active"  style="text-decoration:none;padding-left: 80%;">               
+                <img src="assets/modif.png" class="image" />                                      
+            </a>
+            <a [routerLink]="['/deletePart']" routerLinkActive="active"  style="text-decoration:none;" (click)="onDelete()">
+                <img src="assets/delete.png" class="image" />
+            </a>
+        </td>     
+    </tr>
+    <hr style="line-height: 0%;margin-top: 1px;border: white;">
+    </table>
+    

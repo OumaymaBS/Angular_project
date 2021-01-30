@@ -1,0 +1,51 @@
+
+<nav>
+  <div style="width: 100%;">
+  <div style="display: flex;flex-direction: row;height: 60px;background-color: #000066;padding: 5px;"> 
+      <img src="assets/espaceadmin.jpg" class="image" /> <h1>Espace Admin</h1>
+  </div>
+  <a routerLink="./recherche" routerLinkActive="active" style="text-decoration:none;">
+    <div style="display: flex;flex-direction: row;height: 50px;background-color: #000066;padding: 5px;padding-top:1px;">
+      <img src="assets/recherche.png" class="icon" />
+      <h1 style="background-color: white;color: #000000;text-align: center;font-size: small;padding-top:5px;">Recheche Session</h1>      
+    </div>
+  </a>
+  <a routerLink="./dashboard" routerLinkActive="active"style="text-decoration:none;">
+    <div style="display: flex;flex-direction: row;height: 30px;background-color: #000066;padding-left: 5px;padding-bottom:6px;border-bottom:1px solid rgb(253, 253, 253);">
+      <img src="assets/dashboard.png" class="icon"/>
+      <h1>Dashboard</h1>
+    </div>
+  </a>
+  
+  <a routerLink="./admin" routerLinkActive="active"style="text-decoration:none;">
+    <div style="display: flex;flex-direction: row;height: 30px;background-color: #000066;padding-left: 5px;padding-bottom:6px;border-bottom:1px solid rgb(253, 253, 253);">
+      <img src="assets/session.png" class="icon" />
+      <h1>Sessions</h1>
+    </div>
+  </a>
+  <a routerLink="./formateur" routerLinkActive="active"style="text-decoration:none;">
+    <div style="display: flex;flex-direction: row;height: 30px;background-color: #000066;padding-left: 5px;padding-bottom:6px;border-bottom:1px solid rgb(253, 253, 253);">
+      <img src="assets/formateur.png" class="icon" />
+      <h1>Formateurs</h1>
+    </div> 
+    </a>
+  <a routerLink="./participants" routerLinkActive="active"style="text-decoration:none;">
+    <div style="display: flex;flex-direction: row;height: 30px;background-color: #000066;padding-left: 5px;padding-bottom:6px;border-bottom:1px solid rgb(253, 253, 253);">
+      <img src="assets/participants.png" class="icon" />
+      <h1>Participants</h1>
+    </div>
+  </a>
+</div>
+  </nav>
+
+<section>
+ <nav style="display: flex;flex-direction: row;width: 100%;;height: 50px;background-color: #000066;">
+    <a routerLink="./log" routerLinkActive="active"style="text-decoration:none;padding-left:83%">   
+      <div style="display: flex;flex-direction: row;width: 100%;height: 50px;background-color:#000066;">
+      <h1 style="padding-right:20px;">Date & Adresse</h1>
+      <img src="assets/log2.png" class="icon" />  
+    </div>    
+    </a>
+  </nav> 
+  <router-outlet></router-outlet>
+</section>

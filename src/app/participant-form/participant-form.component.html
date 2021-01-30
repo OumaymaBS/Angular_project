@@ -1,0 +1,23 @@
+<nav>
+    <a [routerLink]="['/refreshPart']" routerLinkActive="active" style="text-decoration:none;">
+        <div style="display: flex;flex-direction: row;width: 80px;">
+          <img src="assets/refresh.png" class="icon" />     
+    </div>
+    </a>
+      <a [routerLink]="['/ajouterPart']" routerLinkActive="active" style="text-decoration:none;">  
+        <div style="display: flex;flex-direction: row;width: 80px;margin-left: 5px;">   
+          <img src="assets/ajout.png" class="icon" />        
+          </div>
+      </a>
+    </nav>
+    <section > 
+        <div>
+            <table style="width: 100%;">
+                <tr>
+                    <th>Liste des Participants</th>
+                </tr>
+                <app-participant-list  *ngFor="let part of parts" [participant]="part">
+                </app-participant-list>  
+            </table>
+        </div>
+    </section>

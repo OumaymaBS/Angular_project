@@ -1,0 +1,16 @@
+<table cellspacing="0" >
+<tr>
+    <td>
+        <p style="text-align: left;font-size: large;width: 200%;">{{formateur.nom}} / {{formateur.prenom}} / {{formateur.adresse}} / {{formateur.email}} / {{formateur.domaineExper}}</p>
+    </td>
+    <td>
+            <a [routerLink]="['/editForm', formateur.id]" routerLinkActive="active"  style="text-decoration:none;padding-left: 80%;">               
+                <img src="assets/modif.png" class="image" />                                      
+            </a>
+            <a [routerLink]="['/deleteForm']" routerLinkActive="active"  style="text-decoration:none;" (click)="onDelete()">
+                <img src="assets/delete.png" class="image" />
+            </a>
+    </td>     
+</tr>
+<hr style="line-height: 0%;margin-top: 1px;border: white;">
+</table>

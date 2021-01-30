@@ -1,0 +1,24 @@
+<nav> 
+  <a [routerLink]="['//refreshFormat']" routerLinkActive="active" style="text-decoration:none;">
+    <div style="display: flex;flex-direction: row;width: 80px;">
+      <img src="assets/refresh.png" class="icon" />     
+</div>
+</a>
+  <a [routerLink]="['/ajouterformat']" routerLinkActive="active" style="text-decoration:none;">  
+    <div style="display: flex;flex-direction: row;width: 80px;margin-left: 5px;">   
+      <img src="assets/ajout.png" class="icon" />        
+      </div>
+  </a>
+</nav>
+<section > 
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <th>Liste des Formateurs</th>
+            </tr>
+            <app-formateurs-list *ngFor="let formator of formators" [formateur]="formator">
+            </app-formateurs-list>
+                    
+        </table>
+    </div>
+</section>

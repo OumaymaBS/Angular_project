@@ -1,0 +1,27 @@
+<header>
+    <h2>Ajouter formateur</h2>
+  </header>
+  <form #formateurForm="ngForm" (ngSubmit)="addFormateur(formateurForm.value)">
+    <ul>
+      <i>
+        <label for="Nom">Nom</label>
+      <input type="text" name="nom" id="nom" ngModel required>
+        <label for="Prenom">Prenom</label>
+        <input type="text" name="prenom" id="prenom" ngModel required>
+      </i>
+      <i>
+      <label for=" Adress ">Adresse</label>
+      <input type="text" name="adresse" id=" adresse " ngModel required>
+      </i>
+      <i>
+      <label for="Email">Email</label>
+      <input type="text" name="email" id="email" ngModel required>
+      </i>
+      <i>
+        <label for="domaineExpertise">Domaine d'expertise</label>
+        <input type="text" name="domaineExper" id="domaineExper" ngModel required>
+        </i>
+    </ul>
+    <button type="submit" [disabled]="!formateurForm.form.valid">Enregistrer</button>
+  </form>
+  
